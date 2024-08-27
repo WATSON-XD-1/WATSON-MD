@@ -14,7 +14,20 @@ try{
 if(!q) return reply ("please give me url lr title")    
 const search = await yts(q)
 const data = search.videos[0];
+const url = data.url
+
+let desc = `
+    ⭐*WATSON-MD SONG DOWNLOADER*⭐
     
+title: ${data.title}    
+description: ${data.description}    
+time: ${data.timestamp}    
+ago: ${data.ago}
+views: ${data.views}
+
+MADE BY WATSON-XD🦋
+` 
+await conn.sendMessage(from    
 }catch(e){
 console.log(e)
 reply('${e}')
