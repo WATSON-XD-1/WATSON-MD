@@ -36,6 +36,8 @@ let downloadurl = down.dl_url
 
 //send audio message 
 await conn.sendMessage(from,{audio: {url:downloadurl},mimetype:"audio/mpeg"},{quoted:mek}) 
+await conn.sendMessage(from,{document: {url:downloadurl},mimetype:"audio/mpeg",FileName:data.title + ".mp3",caption:"MADE BY WATSON-XD"},{quoted:mek}) 
+
 
 
 
