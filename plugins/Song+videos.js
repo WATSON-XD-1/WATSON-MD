@@ -11,7 +11,10 @@ cmd({
 },
 async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
 try{
-const    
+if(!q) return reply ("please give me url lr title")    
+const search = await yts(q)
+const data = search.videos[0];
+    
 }catch(e){
 console.log(e)
 reply('${e}')
