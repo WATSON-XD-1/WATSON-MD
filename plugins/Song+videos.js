@@ -34,7 +34,7 @@ await conn.sendMessage(from,{image:{url: data.thumbnail},caption:desc},{quoted:m
 let down = await fg.yta(url)
 let downloadurl = down.dl_url 
 
-//send audio message 
+//send audio + document message 
 await conn.sendMessage(from,{audio: {url:downloadurl},mimetype:"audio/mpeg"},{quoted:mek}) 
 await conn.sendMessage(from,{document: {url:downloadurl},mimetype:"audio/mpeg",FileName:data.title + ".mp3",caption:"MADE BY WATSON-XD"},{quoted:mek}) 
 
@@ -82,9 +82,9 @@ await conn.sendMessage(from,{image:{url: data.thumbnail},caption:desc},{quoted:m
 let down = await fg.yta(url)
 let downloadurl = down.dl_url 
 
-//send video message 
+//send video+ document message 
 await conn.sendMessage(from,{video: {url:downloadurl},mimetype:"video/mp4"},{quoted:mek}) 
-await conn.sendMessage(from,{document: {url:downloadurl},mimetype:"video/mp4",FileName:data.title + ".mp4"},{quoted:mek}) 
+await conn.sendMessage(from,{document: {url:downloadurl},mimetype:"video/mp4",FileName:data.title + ".mp4",caption:"MADE BY WATSON-XD🦋"},{quoted:mek}) 
 
 
 
