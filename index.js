@@ -167,6 +167,7 @@ command.function(conn, mek, m,{from, l, quoted, body, isCmd, command, args, q, i
 //============================================================================ 
 if(!isowner && config.MODE === "private") return 
 if(!isowner && is group && config.MODE === "inbox") return 
+if(!isowner && !isGroup && config.MODE === "groups") return 
 })
 }
 app.get("/", (req, res) => {
