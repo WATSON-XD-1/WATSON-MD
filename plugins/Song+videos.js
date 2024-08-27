@@ -27,7 +27,7 @@ views: ${data.views}
 
 MADE BY WATSON-XD🦋
 ` 
-await conn.sendMessage(from    
+await conn.sendMessage(from,{image:{url: data.thumbnail},})    
 }catch(e){
 console.log(e)
 reply('${e}')
