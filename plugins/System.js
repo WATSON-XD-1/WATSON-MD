@@ -14,7 +14,7 @@ try{
 let status = `*uptime:*  ${runtime(process.uptime())}
 *Ram usage:* ${(process.memoryusage().heapused / 1024 / 1024).toFixed(2)MB / ${Math.round(require('os')totalmem / 1024 / 1024)}MB                               
 *Hostname:* ${(os.hostname()}
-*Owner:* WATSON FOURPENCE
+*Owner:* watson-xd
 ` 
 return reply (`${status}`)
 }catch(e){
