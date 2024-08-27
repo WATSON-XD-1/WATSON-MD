@@ -1,11 +1,11 @@
 const config = require('../config')
 const {cmd , commands} = require('../command')
 const os = require("os")
-const
+const {runtime} = require('..lib/Functions')
 cmd({
     pattern: "system",
     alias: ["status","botinfo],
-    desc: "Check bot online or no.",
+    desc: "Check up time ,ram usage and more",
     category: "main",
     filename: __filename
 },
