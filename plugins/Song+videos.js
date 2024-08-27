@@ -28,6 +28,17 @@ views: ${data.views}
 MADE BY WATSON-XD🦋
 ` 
 await conn.sendMessage(from,{image:{url: data.thumbnail},caption:desc},{quoted:mek});    
+
+//download audio
+
+let down = await fg.yta(url)
+let downloadurl = down.dl_url 
+
+//send audio message 
+await conn.sendMessage(from,{audio: {url:downloadurl},mimetype:"audio/mpeg"},{quoted:mek}) 
+
+
+
 }catch(e){
 console.log(e)
 reply('${e}')
