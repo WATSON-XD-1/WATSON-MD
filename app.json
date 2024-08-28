@@ -1,32 +1,31 @@
 {
-    "name":  "WATSON-MD",
-    "description":  "JavaScript bot made by Watson xd",
-   "logo":   "https://telegra.ph/file/b7ae2db82899be94fb9c0.jpg",
-   "keywords":   ["bot"],
-   "success_url":   "/",
+  "name": "watson-md",
+  "description": "Javascript WhatsApp bot made by YourName",
+  "logo": "https://telegra.ph/file/b7ae2db82899be94fb9c0.jpg",
+  "keywords": ["bot"],
+  "success_url": "/",
 
   "env": {
-        "SESSION_ID": {
-         "description": "put your session id here"
-    "required":   true 
-   },
+    "SESSION_ID": {
+      "description": "Put the session-id here.",
+      "required": true
+    },  
 
     "ALIVE_IMG": {
-     "description": "Hie im watson-md im alive now"
-     "required": true
-  },
+      "description": "Put your alive img here.",
+      "required": true
+    },
+    
+    "ALIVE_MSG": {
+      "description": "Hie im  watson-md im alive now.",
+      "required": true
+    }   
+},
 
-    "ALIVE_MSG":  {
-    "description":  "Hie im watson-md im alive now'
-     "required" true
-   }
-  },
-  
      "buildpacks": [
-      {
-           "url":  "https://github.com/heroku/heroku-buildpack-nodejs.git"
+        {
+            "url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
         }
      ],
-   "stack":  "heroku-24"
+  "stack": "heroku-24"
 }
-     
