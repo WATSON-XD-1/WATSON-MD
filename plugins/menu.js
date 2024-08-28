@@ -24,7 +24,22 @@ menu[commands[i].category] += `.${commands[i].pattern}\n`;
  }
 }
 
-let made menu    
+let madeMenu = `👋 *Hello ${pushname}*
+> *DOWNLOAD COMMANDS* ⬇️
+
+${menu.download}
+
+> *MAIN COMMANDS* ✨
+
+${menu.main}
+
+> *GROUP COMMANDS* ✅
+
+${menu.group}
+
+> **
+`
+    
 }catch(e){
 console.log(e)
 reply('${e}')  
