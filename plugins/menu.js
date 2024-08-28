@@ -37,9 +37,21 @@ ${menu.main}
 
 ${menu.group}
 
-> **
+> *OWNER COMMANDS* 👑
+
+${menu.owner}
+
+> *CONVERT COMMANDS* 🌟
+
+${menu.convert}
+
+> *SEARCH COMMANDS* 🔍
+
+${menu.search}
+
+POWERED BY WATSON-XD 👑
 `
-    
+await conn.sendMessages(from,{text})   
 }catch(e){
 console.log(e)
 reply('${e}')  
