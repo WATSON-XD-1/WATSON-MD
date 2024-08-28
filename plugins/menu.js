@@ -51,7 +51,7 @@ ${menu.search}
 
 POWERED BY WATSON-XD 👑
 `
-await conn.sendMessages(from,{text})   
+await conn.sendMessages(from,{text:madeMenu} , {quoted:mek})   
 }catch(e){
 console.log(e)
 reply('${e}')  
