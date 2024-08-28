@@ -51,8 +51,7 @@ ${menu.search}
 
 POWERED BY WATSON-XD 👑
 `
-    
-await conn.sendMessages(from,{text:madeMenu} , {quoted:mek})   
+await conn.sendMessages(from,{image:{url;"https://telegra.ph/file/b7ae2db82899be94fb9c0.jpg"},caption:madeMenu},{quoted:mek})   
 }catch(e){
 console.log(e)
 reply('${e}')  
